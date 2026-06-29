@@ -1,0 +1,76 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.17.1
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npmrc
+5 silly config load:file:C:\Users\MYPC\.npmrc
+6 silly config load:file:C:\Users\MYPC\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install json-server@0.17.4
+8 verbose argv "install" "json-server@0.17.4" "--cache" ".\\.npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npm-cache\_logs\2026-06-29T10_12_29_055Z-
+10 verbose logfile C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npm-cache\_logs\2026-06-29T10_12_29_055Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest json-server@0.17.4
+15 silly packumentCache full:https://registry.npmjs.org/json-server cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/json-server 647ms (cache miss)
+18 silly placeDep ROOT json-server@ REPLACE for: backend@1.0.0 want: 0.17.4
+19 http fetch GET 200 https://registry.npmjs.org/npm 797ms
+20 verbose type system
+21 verbose stack FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/json-server: EPERM: operation not permitted, unlink 'C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npm-cache\_cacache\tmp\0e16999d'
+21 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:170:15
+21 verbose stack     at async Response.json (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:75:17)
+21 verbose stack     at async RegistryFetcher.packument (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:98:25)
+21 verbose stack     at async RegistryFetcher.manifest (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:128:23)
+21 verbose stack     at async #fetchManifest (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1202:20)
+21 verbose stack     at async #nodeFromEdge (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1040:19)
+21 verbose stack     at async #buildDepStep (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:904:11)
+21 verbose stack     at async Arborist.buildIdealTree (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:181:7)
+21 verbose stack     at async Promise.all (index 1)
+21 verbose stack     at async Arborist.reify (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+22 error code EPERM
+23 error syscall unlink
+24 error path C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npm-cache\_cacache\tmp\0e16999d
+25 error errno EPERM
+26 error FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/json-server: EPERM: operation not permitted, unlink 'C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npm-cache\_cacache\tmp\0e16999d'
+26 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:170:15
+26 error     at async Response.json (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\body.js:75:17)
+26 error     at async RegistryFetcher.packument (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:98:25)
+26 error     at async RegistryFetcher.manifest (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:128:23)
+26 error     at async #fetchManifest (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1202:20)
+26 error     at async #nodeFromEdge (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1040:19)
+26 error     at async #buildDepStep (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:904:11)
+26 error     at async Arborist.buildIdealTree (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:181:7)
+26 error     at async Promise.all (index 1)
+26 error     at async Arborist.reify (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5) {
+26 error   code: 'EPERM',
+26 error   errno: 'EPERM',
+26 error   syscall: 'unlink',
+26 error   path: 'C:\\Users\\MYPC\\OneDrive\\Documents\\Luminar\\React Projects\\PawCare\\backend\\.npm-cache\\_cacache\\tmp\\0e16999d',
+26 error   type: 'system',
+26 error   requiredBy: '.'
+26 error }
+27 error
+27 error The operation was rejected by your operating system.
+27 error It's possible that the file was already in use (by a text editor or antivirus),
+27 error or that you lack permissions to access it.
+27 error
+27 error If you believe this might be a permissions issue, please double-check the
+27 error permissions of the file and its containing directories, or try running
+27 error the command again as root/Administrator.
+28 silly unfinished npm timer reify 1782727950842
+29 silly unfinished npm timer reify:loadTrees 1782727950844
+30 verbose cwd C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend
+31 verbose os Windows_NT 10.0.26200
+32 verbose node v22.17.1
+33 verbose npm  v10.9.2
+34 notice
+34 notice New major version of npm available! 10.9.2 -> 11.17.0
+34 notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+34 notice To update run: npm install -g npm@11.17.0
+34 notice  { force: true, [Symbol(proc-log.meta)]: true }
+35 verbose exit 1
+36 verbose code 1
+37 error A complete log of this run can be found in: C:\Users\MYPC\OneDrive\Documents\Luminar\React Projects\PawCare\backend\.npm-cache\_logs\2026-06-29T10_12_29_055Z-debug-0.log
